@@ -119,3 +119,81 @@ button:active {
         border-radius: 40px;
     }
 }
+
+#extra-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+#extra-controls button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    border: none;
+    background-color: hsl(200, 10%, 40%);
+    color: white;
+    cursor: pointer;
+}
+
+#extra-controls button:hover {
+    background-color: hsl(200, 10%, 55%);
+}
+
+#history-container {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    margin: 10px auto;
+    width: 90%;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#history-container h3 {
+    margin: 0 0 10px;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 🌞 Light theme overrides */
+body.light {
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+}
+
+body.light #calculator {
+    background-color: hsl(0, 0%, 90%);
+}
+
+body.light #display {
+    background-color: hsl(0, 0%, 80%);
+    color: black;
+}
+
+body.light button {
+    background-color: hsl(0, 0%, 70%);
+    color: black;
+}
+
+body.light .operator-btn {
+    background-color: hsl(35, 100%, 65%);
+}
+
+body.light #extra-controls button {
+    background-color: hsl(200, 10%, 70%);
+    color: black;
+}
+
+body.light #history-container {
+    background-color: hsl(0, 0%, 95%);
+    color: black;
+}
