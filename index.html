@@ -27,7 +27,23 @@
             <button onclick="appendToDisplay('.')">.</button>
             <button onclick="calculate()">=</button>
             <button onclick="clearDisplay()" class="operator-btn">C</button>
+            <button onclick="backspace()" class="operator-btn">←</button>
+            <button onclick="appendToDisplay('(')" class="operator-btn">(</button>
+            <button onclick="appendToDisplay(')')" class="operator-btn">)</button>
+
         </div>
+        <!-- New row for history and theme toggle -->
+        <div id="extra-controls">
+            <button onclick="toggleTheme()" id="theme-toggle">🌙</button>
+            <button onclick="toggleHistory()" id="history-toggle">H</button>
+        </div>
+
+        <!-- History output -->
+        <div id="history-container">
+            <h3>History</h3>
+            <ul id="history-list"></ul>
+        </div>
+
     </div>
     <script src="index.js"></script>
 </body>
